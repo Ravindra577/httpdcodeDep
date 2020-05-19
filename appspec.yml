@@ -10,6 +10,7 @@ hooks:
       runas: root
   BeforeInstall:
     - location: scripts/install_dependencies
+    - location: scripts/undeploy_oldfiles.sh
       timeout: 300
       runas: root
   ApplicationStart:
